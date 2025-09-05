@@ -10,12 +10,24 @@ The project's architecture is a synthesis of modern techniques from diffusion mo
 
 Here are some examples of the model's performance after training. The top image is the original underwater input, and the bottom is the enhanced output.
 
-**Example 1:**
-![Example Result 1](https://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/1.png?raw=true)
-
-**Example 2:**
-![Example Result 2](https://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/2.png?raw=true)
-
+<table>
+  <tr>
+    <td align="center"><b>Example 1: Original</b></td>
+    <td align="center"><b>Example 1: Enhanced</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/1.png?raw=true" width="400"></td>
+    <td><img src="https://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/2.png?raw=true" width="400"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Example 2: Original</b></td>
+    <td align="center"><b>Example 2: Enhanced</b></td>
+  </tr>
+  <tr>
+    <td><em></em><img src="URL_TO_YOUR_SECOND_BEFORE_IMAGE" width="400"></td>
+    <td><em></em><img src="URL_TO_YOUR_SECOND_AFTER_IMAGE" width="400"></td>
+  </tr>
+</table>
 ---
 
 ## 📝 Project Overview
