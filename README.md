@@ -20,16 +20,16 @@ Here are some examples of the model's performance after training. For each pair,
     <td align="center"><b>Example 1: Enhanced</b></td>
   </tr>
   <tr>
-    <td><img src="URL_TO_YOUR_FIRST_ORIGINAL_IMAGE.png?raw=true" width="400"></td>
-    <td><img src="URL_TO_YOUR_FIRST_ENHANCED_IMAGE.png?raw=true" width="400"></td>
+    <td><img src="Uhttps://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/1.png?raw=true" width="400"></td>
+    <td><img src="https://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/1.png?raw=true" width="400"></td>
   </tr>
   <tr>
     <td align="center"><b>Example 2: Original</b></td>
     <td align="center"><b>Example 2: Enhanced</b></td>
   </tr>
   <tr>
-    <td><img src="URL_TO_YOUR_SECOND_ORIGINAL_IMAGE.png?raw=true" width="400"></td>
-    <td><img src="URL_TO_YOUR_SECOND_ENHANCED_IMAGE.png?raw=true" width="400"></td>
+    <td><img src="https://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/2.png?raw=true" width="400"></td>
+    <td><img src="https://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/2.png?raw=true" width="400"></td>
   </tr>
 </table>
 ---
