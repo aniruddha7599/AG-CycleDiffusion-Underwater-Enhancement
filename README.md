@@ -10,14 +10,6 @@ The project's architecture is a synthesis of modern techniques from diffusion mo
 
 Here are some examples of the model's performance after training. The top image is the original underwater input, and the bottom is the enhanced output.
 
-## 📸 Results
-
-Here are some examples of the model's performance after training. For each pair, the original underwater input is on the left, and the enhanced output is on the right.
-
-## 📸 Results
-
-Here are some examples of the model's performance after training. For each pair, the original underwater input is on the left, and the enhanced output is on the right.
-
 <table>
   <tr>
     <td align="center"><b>Example 1:</b></td>
