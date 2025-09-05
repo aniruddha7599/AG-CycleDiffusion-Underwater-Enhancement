@@ -4,7 +4,21 @@ This repository contains the official PyTorch implementation for **AG-CycleDiffu
 
 The project's architecture is a synthesis of modern techniques from diffusion models and Generative Adversarial Networks (GANs), prioritizing final image quality and training stability.
 
+---
 
+## 📸 Results
+
+Here are some examples of the model's performance after training. The top image is the original underwater input, and the bottom is the enhanced output.
+
+**Example 1:**
+*<-- Add your first image here using the instructions from our previous conversation. -->*
+`![Example Result 1](https://github.com/YourUsername/YourRepoName/blob/main/assets/result_1.png?raw=true)`
+
+**Example 2:**
+*<-- Add your second image here. -->*
+`![Example Result 2](https://github.com/YourUsername/YourRepoName/blob/main/assets/result_2.png?raw=true)`
+
+---
 
 ## 📝 Project Overview
 
@@ -24,20 +38,17 @@ The model is a hybrid system composed of four distinct neural networks, guided b
 
 ## 🧪 Training Methodology
 
-To ensure stability and high-quality convergence, the model is trained using an advanced curriculum broken into distinct phases.
+To ensure stability and a high chance of convergence, the model is trained using a **simplified two-phase curriculum** where the U-Nets are trained to **predict the final, clean image directly**.
 
 ### Key Features
-* **Noise-Predicting U-Nets**: The core U-Nets are trained to predict the noise that should be removed from an image at any given timestep, which is a robust and standard approach for diffusion models.
-* **Five Balanced Losses**: The training is driven by a carefully balanced combination of five loss functions:
-    1.  **Adversarial Loss**: For style and realism.
+* **Direct Image Prediction**: The U-Nets' objective is to directly predict the denoised image `x0` from a noisy input `xt`, which proved to be more stable for this task.
+* **Three Core Losses**: The training is driven by a balanced combination of three essential loss functions:
+    1.  **Adversarial Loss**: For realism and style.
     2.  **Cycle-Consistency Loss**: For content preservation.
     3.  **Perceptual Loss**: For sharpness and high-frequency details.
-    4.  **Identity Loss**: For color stability and preventing unnecessary changes.
-    5.  **Diffusion Reconstruction Loss**: To anchor the denoising process.
-* **Three-Phase Curriculum**:
-    * **Phase 1 (Denoise & Identity)**: Builds a stable foundation for the U-Nets.
-    * **Phase 2 (Content Preservation)**: Activates Cycle and Perceptual losses to learn the structural mapping.
-    * **Phase 3 (Adversarial Sharpening)**: Gradually introduces the GAN loss to achieve photorealism.
+* **Two-Phase Curriculum**:
+    * **Phase 1 (Content Preservation)**: The U-Nets are trained with only the Cycle and Perceptual losses to build a stable foundation for content-aware translation.
+    * **Phase 2 (Adversarial Sharpening)**: The GAN loss is gradually introduced to refine the output, adding photorealistic detail and perfecting the style.
 
 ### Performance Optimizations
 * **Fast Diffusion**: Uses a **Cosine Beta Schedule** with only **200 timesteps**.
@@ -74,7 +85,7 @@ This model requires two large, unpaired datasets.
 
 ### Inference
 1.  Update the paths in the `InferenceConfig` class at the top of `inference.py`.
-    * `CHECKPOINT_PATH`: Point this to the `.pth` checkpoint file you want to use (the EMA weights are recommended, e.g., `EMA_U_w2l_step_200000.pth`).
+    * `CHECKPOINT_PATH`: Point this to the `.pth` checkpoint file you want to use.
     * `INPUT_IMAGE_PATH`: The path to the underwater image you want to enhance.
 2.  Run the inference script:
     ```bash
