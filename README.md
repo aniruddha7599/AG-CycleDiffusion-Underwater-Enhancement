@@ -16,15 +16,15 @@ Here are some examples of the model's performance after training. For each pair,
 
 <table>
   <tr>
-    <td align="center"><b>Example 1: Original</b></td>
-    <td align="center"><b>Example 1: Enhanced</b></td>
+    <td align="center"><b>Example 1:</b></td>
+    <td align="center"><b>Example 1:</b></td>
   </tr>
   <tr>
     <td><img src="Uhttps://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/1.png?raw=true" width="400"></td>
     <td><img src="https://github.com/aniruddha7599/AG-CycleDiffusion-Underwater-Enhancement/blob/main/1.png?raw=true" width="400"></td>
   </tr>
   <tr>
-    <td align="center"><b>Example 2: Original</b></td>
+    <td align="center"><b>Example 2: </b></td>
     <td align="center"><b>Example 2: Enhanced</b></td>
   </tr>
   <tr>
