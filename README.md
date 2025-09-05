@@ -21,7 +21,7 @@ Here are some examples of the model's performance after training. The top image 
   </tr>
   
 </table>
----
+
 
 ## 📝 Project Overview
 
